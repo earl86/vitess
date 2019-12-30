@@ -1,5 +1,10 @@
 # Global configuration that is auto-included for all MySQL/MariaDB versions
 
+#for install mysql using bin tar,modify the following three parameters
+#basedir = /usr/local/mysql
+#plugin-dir = /usr/local/mysql/lib/plugin/
+#lc-messages-dir=/usr/local/mysql/share/
+
 datadir = {{.DataDir}}
 innodb_data_home_dir = {{.InnodbDataHomeDir}}
 innodb_log_group_home_dir = {{.InnodbLogGroupHomeDir}}
